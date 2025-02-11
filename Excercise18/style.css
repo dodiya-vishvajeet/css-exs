@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    width: 100%;
+    background-image: url(./img/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    height: auto;
+
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.left {
+    width: 50%;
+    color: azure;
+    font-size: 30px;
+    letter-spacing: 4px;
+    padding: 10px;
+}
+
+label {
+    color: aqua;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+li {
+    color: rgb(255, 255, 255);
+    list-style: none;
+    font-size: 20px;
+}
+
+button {
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+}
+.option
+{
+    transition: all ease-in-out 1s;
+
+}
+.button1 {
+    background-color:transparent;
+    border-radius: 20px;
+    border: none;
+    margin: 0px !important;
+    color: rgb(255, 255, 255);
+    
+    font-size: 20px;
+
+
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.639);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+
+
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    font-weight:bold;
+}
+a:hover{
+    color: rgb(255, 207, 207);
+    transition: all ease-in-out 0.4s;
+} 
+.option:hover .menu {
+    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vh;
+    transition: all ease-in-out 1s;
+    opacity: 1;
+}
+.option:hover .ico {
+transform: rotate(180deg);
+transition: all ease-in-out 0.5s;
+}

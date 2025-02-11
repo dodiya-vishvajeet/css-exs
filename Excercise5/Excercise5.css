@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.main ul li 
+{
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+   color: black;
+}
+.main
+{
+    background-color: rgb(232, 232, 125);
+    text-align: center;
+}
+body
+{background-image:url(/img/roberto-h-qToVxSYXPYU-unsplash.jpg);
+}
+ li:hover
+{
+    background-color: rgb(125, 254, 254);
+    transition:  0.7s ease-in-out, color 0.5s ease-in-out;}
+.pp
+{
+    text-align: center;
+    margin-top: 40px;
+}

@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+
+}
+
+.main {
+    height: auto;
+    width: 100%;
+}
+
+.ripper {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(77 159 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h4 {
+        font-family: "Inter Tight";
+        font-weight: 400;
+    }
+
+}
+
+.gmail {
+    background-color: #faf9f7;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 1vw;
+    align-items: center;
+    padding-right: 85px;
+
+    img {
+        height: 30px;
+    }
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.host {
+    font-weight: 600;
+    height: auto;
+    display: flex;
+    gap: 2vw;
+
+    li {
+        font-family: "poppins" !important;
+        list-style: none;
+
+        select {
+            background-color: transparent;
+            border: none;
+            font-family: bold;
+            font-size: 20px;
+
+        }
+
+
+        select:focus {
+            display: none;
+        }
+    }
+}
+
+.live {
+    button {
+        height: 50px;
+        width: 110px;
+        border-radius: 50px;
+        font-weight: 600;
+        border: none;
+        background-color: rgb(2 35 15);
+        color: rgb(187 255 112);
+        transition: all ease-in-out 0.5s;
+    }
+
+    button:hover {
+        height: 50px;
+        width: 110px;
+        font-weight: 600;
+        border-radius: 50px;
+        border: none;
+        color: rgb(2 35 15);
+        background-color: rgb(187 255 112);
+    }
+}
+
+.domain {
+    background-color: rgb(2 35 15);
+    height: 700px;
+    width: 100%;
+    display: flex;
+}
+
+    .left {
+        height: 100%;
+        width: 50%;
+        color: white;
+        display: flex;
+        align-items: start;
+        float: left ;
+        padding-left: 15vh;
+        justify-content: center;
+        flex-direction: column;
+
+
+        h1 {
+            font-family: "Bricolage Grotesque", sans-serif;
+            font-weight: 600;
+            letter-spacing: 3px;
+            font-size: 48px;
+
+        }
+
+        .aus {
+            height: 200px;
+            width: 250px;
+            background-color: yellow;
+            color: rgb(0, 0, 0);
+            clip-path: polygon(100% 0, 100% 100%, 0 84%, 0 15%);
+
+        }
+
+        h5 {
+            font-family: "Bricolage Grotesque", sans-serif;
+            font-weight: 600;
+
+            margin-top: 20px;
+            width: 100%;
+            font-size: 14px;
+
+
+        }
+
+        button {
+            height: 50px;
+            width: 150px;
+            border: none;
+            border-radius: 25px;
+            margin-top: 25px;
+            font-family: "Inter Tight";
+            font-weight: 800;
+
+        }
+        a{
+            margin-top: 25px;
+            color: #4d9fff;
+        }
+    }
+   
+.photo{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        height: 80%;
+        /* width: 100%; */
+
+    }
+}

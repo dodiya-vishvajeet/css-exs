@@ -1,0 +1,120 @@
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.main
+{
+    background-color: aquamarine;
+    height: 550px;
+    width: 70%;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 1px 10px 15px 1px gray;
+}
+.photo1{
+    height: 550px;
+    width: 35%;
+
+}
+.photo1 img
+{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px 0px 0px 20px;
+
+}
+form{
+    width: 65%;
+}
+.from1
+{    height: 550px;
+    width: 100%;
+    min-width: 90%;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0px  20px 20px 0px;
+}
+input{
+    height:30px;
+    width: 70%;
+    font-size: 20px;
+    padding: 22px;
+
+}
+h1{
+    text-align: center;
+}
+button
+{
+    height: 40px;
+    width: 80px;
+    font-size: 22px;
+    border:none ;
+    border-radius: 10px;
+}
+
+
+ button:hover
+ {
+    background-color: aquamarine;
+ }
+ @media screen and (max-width: 450px)
+{
+     h1{
+        font-size: 15px;
+        margin: 10px;
+
+     }
+    .photo1{
+        display: none;
+    }
+    .from1{
+        background-image: url(./img/Screenshot\ 2025-02-07\ at\ 10.54.23\ AM.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        border-radius:20px ;
+    }
+    form{
+
+        width: 100%;
+    }
+}
+ @media screen and (max-width: 900px) and  (min-width: 450px) {
+   .main
+   {
+    flex-direction: column;
+   }
+   .photo1
+   {
+    width: 100%;
+   }
+   form{
+    width: 100%;
+   }
+   h1{
+    font-size: 15px;
+   }
+
+   .photo1 img{
+    border-radius: 20px  20px 0px 0px;}
+    .from1{
+    border-radius: 0px 0px 20px  20px;
+    box-shadow: 1px 10px 15px 1px gray;
+
+    }
+ }

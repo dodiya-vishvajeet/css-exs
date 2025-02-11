@@ -1,0 +1,95 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.nav{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display:grid;
+    align-items: center;
+    padding-left: 30px;
+}
+.but
+{
+    height: 300px;
+  display: grid;
+  width: 20%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.div1
+{
+  background-color: #53707A;
+  height: 30px;
+  width: 150px;
+  display: grid;
+align-items: center;
+justify-items: center;
+  padding: 20px;
+  text-align: start;
+  color: aliceblue;
+  font-size: 20px;
+}
+.right
+{
+    height: 300px;
+  display: grid;
+  width: 100%;
+
+}
+.the
+{
+    height: 300px;
+    display: grid;
+    width: 80%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4vh;
+    padding: 20px;
+
+}
+@media screen and (max-width: 500px) and (min-width: 1px)  
+{
+.but{
+  width: 100%;
+padding: 20px;
+ gap: 4vh;
+ flex-direction: column;
+
+}
+.right{
+    flex-direction: column;
+}
+
+.the{
+
+    width: 100%;
+align-items: center;
+}
+.nav{
+  justify-content: center;
+}
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 500px) 
+{
+    .but{
+        gap:2vw;
+        width: 100%;
+       flex-direction: row;
+       margin-top: 20px
+    }
+    .right{
+        flex-direction: column;
+    }
+    .the{
+      width: 100%;
+    }
+}

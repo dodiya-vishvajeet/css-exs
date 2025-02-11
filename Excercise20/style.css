@@ -1,0 +1,150 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.mian
+{
+    height: 100vh;
+    width: 100%;
+}
+.but
+{  height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+button
+{   height: 20px;
+    width: 110px;
+    padding: 20px;
+    margin: 10px;
+    border-radius:10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+button:hover{
+    box-shadow: 5px 10px 15px 0px rgb(99, 96, 96) ;
+}
+.bu1{
+    background-color: green;
+    position: relative;
+    
+
+}
+.bu2{
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+}
+.bu3{
+  background-color: blue;  
+  position: relative;
+
+}
+.bu4{
+    background-color: yellow;
+}
+.bu1::after{
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content:"✔️";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left:70PX;
+    transform: translateX(-40%);
+    transition: all ease .3s;
+    z-index: -1;
+}
+.bu1:hover::after
+{    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content:"✔️";
+    transform: translateX(0);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left:70PX;
+}
+.bu2:hover{
+
+    animation: gil 0.5s infinite ease-in-out;
+}
+.bu3::after{
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content:"";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left:70PX;
+    transform: translateX(-40%);
+    transition: all ease 0.3s;
+    z-index: -1;
+}
+.bu3:hover::after
+{    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content:"ⓘ";
+    transform: translateX(0%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left:70PX;
+}
+.bu4s:hover{
+
+    animation: gil 0.5s infinite ease-in-out;
+}
+
+@keyframes fadein {
+    from{
+        scale: 2;
+        background-color: rgb(255, 132, 0);
+    }
+    to{
+        scale: 1;
+    }
+}
+
+@keyframes gil
+{
+    100%{
+        opacity: 0;
+        background-color: rgb(255, 81, 0);
+        transform: translateX(5px);
+    }
+    
+    75%{
+        opacity: 1;
+        transform: translateX(-5px);
+    }
+    50%{
+        opacity: 0;
+        transform: translateX(5px);
+    }
+    25%{
+        opacity: 1;
+        transform: translateX(-5px);
+    }
+    0%{
+        opacity: 0;
+        transform: translateX(5px);
+    }
+    
+}
